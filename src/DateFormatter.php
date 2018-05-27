@@ -1,4 +1,5 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace IW\Workshop;
 
@@ -9,11 +10,16 @@ class DateFormatter
     /**
      * Get current part of the day
      *
+     * @param $dateTime
      * @return string
      */
-    public function getPartOfDay() : string
+    public function getPartOfDay($dateTime = null) : string
     {
-        $dateTime    = new DateTime();
+        // default param, v parametru nemuze byt volani fce
+        if (!isset($dateTime)) {
+            $dateTime    = new DateTime();
+        }
+
         $currentHour = $dateTime->format('G');
 
         if ($currentHour >= 0 && $currentHour < 6)
