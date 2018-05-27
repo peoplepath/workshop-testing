@@ -6,6 +6,12 @@ use DateTime;
 
 class DateFormatter
 {
+
+    public function getCurrentHour(): int
+    {
+        return (int)(new DateTime())->format('G');
+    }
+
     /**
      * Get current part of the day
      *
@@ -13,8 +19,7 @@ class DateFormatter
      */
     public function getPartOfDay() : string
     {
-        $dateTime    = new DateTime();
-        $currentHour = $dateTime->format('G');
+        $currentHour = $this->getCurrentHour();
 
         if ($currentHour >= 0 && $currentHour < 6)
         {

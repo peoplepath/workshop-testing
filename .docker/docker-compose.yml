@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  php:
+    build:
+      dockerfile: php/Dockerfile
+      context: .
+      args:
+        HOST_USER_UID: 1000
+        HOST_USER_GID: 1000
+    image: intraworlds/workshop-testing
+    working_dir: /usr/src
+    user: developer
+    volumes:
+      - ..:/usr/src
