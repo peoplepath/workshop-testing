@@ -14,3 +14,13 @@ Odevzdat úkol můžete dvěma způsoby:
 
 ### Řešení
 Bude zveřejněno během workshopu v úterý 29. 5. 2018, přijďte :-)
+
+### Instalace
+```
+$ docker-compose -f .docker/docker-compose.yml run --rm php composer install
+```
+
+### Spuštění testů
+```
+$ docker-compose -f .docker/docker-compose.yml run --rm php composer test
+```
