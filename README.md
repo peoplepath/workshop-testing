@@ -1,5 +1,5 @@
 ### Zadání
-Napište unit testy ve vašem oblíbeném testovacím frameworku (PHPUnit, Netter teste, Atoum, apod.) pro třídy Calculator, DateFormatter definované v souborech Calculator.php a DateFormatter.php 
+Napište unit testy ve vašem oblíbeném testovacím frameworku (PHPUnit, Netter teste, Atoum, apod.) pro třídy Calculator, DateFormatter definované v souborech Calculator.php a DateFormatter.php
 V případě třídy DateFormatter navrhněte změny, které umožní její testovaní s minimální změnou signatur jednotlivých metod.
 
 #### Bonus
@@ -14,3 +14,6 @@ Odevzdat úkol můžete dvěma způsoby:
 
 ### Řešení
 Bude zveřejněno během workshopu v úterý 29. 5. 2018, přijďte :-)
+
+### Run tests
+`./vendor/bin/phpunit`
